@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <style type="text/css">
+            /* Bootstrap fixes  */
+        body {
+            padding: 60px 0;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width">
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+
+            <a class="brand" href="#">Multiple Marker Detection and Overlay Demo</a>
+        </div>
+    </div>
+</div>
+<div class="container">
+<div class="row-fluid">
+    <div class="span12">
+        <div class="alert alert-warning">
+            <p>
+            This is a work in progress. A small app which uses <a href="https://github.com/kig/JSARToolKit">JSARToolkit</a>, <a href="https://github.com/mrdoob/three.js/">Three.JS</a>, <a href="http://www.webrtc.org/">Webrtc</a> to detect multiple markers. You can find  <a href="marker1.html">1 marker here</a>, <a href="marker2.html">multiple marker here</a>.
+            
+            As soon as the app detects a marker, a sphere is overlaid with either red or green color in an alternating fashion.
+            </p>
+            <p>
+            Use a phone or tablet or another laptop screen or printout of the markers to test it. Demo Video coming soon for those who are unable to test it for some reason.</p>
+        </div>
+        
+        
+        <div class="row-fluid">
+            <div class="span11 well">
+                <div id="mainWindow"></div>
+            </div>
+        </div>
+        <div class="row-fluid">
+            <div class="span5 well">
+                <div id="debugWindow"></div>
+            </div>
+        </div>
+        </div>
+
+
+    </div>
+
+</div>
+    </div>
+<script src="js/libs/bootstrap.min.js"></script>
+<script src="vendor/JSARToolKit.min.js"></script>
+<script src="build/three.min.js"></script>
+<script src="vendor/requestanimationframe.js"></script>
+<script src="js/shimUserMedia.js"></script>
+<script src='threex.jsartoolkit.js'></script>
+<script src='js/main.js'></script>
+
+</body>
+
+</html>
